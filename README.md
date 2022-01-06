@@ -1,0 +1,2 @@
+# secuenciaslsupermercado6deenero2022
+Created with CodeSandbox
