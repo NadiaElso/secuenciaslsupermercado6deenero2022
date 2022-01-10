@@ -22,6 +22,7 @@ let StockCremaDeLeche: number;
 let stockDulceDeLeche: number;
 let stockGalletitas: number;
 
+
 nombreDesupermercado = "Madariaga";
 productosDisponibles =
   "Leche,Azucar, Yogurt, manteca, queso, fideos, salsa de tomate, aceite, crema de leche, dulce de leche, galletitas";
@@ -37,6 +38,7 @@ StockCremaDeLeche = 4;
 stockDulceDeLeche = 0;
 stockGalletitas = 6;
 
+
 console.log(nombreDesupermercado);
 console.log(productosDisponibles);
 console.log(stockLeche);
@@ -48,3 +50,19 @@ console.log(stockSalsaDeTomate);
 console.log(StockCremaDeLeche);
 console.log(stockDulceDeLeche);
 console.log(stockGalletitas);
+
+let precioLeche:number;
+let precioAzucar:number;
+let precioYogurt:number;
+let precioManteca:number;
+let precioQueso:number;
+let precioFideos:number;
+let preciosalsaDeTomates:number;
+let precioCremaDeLeche:number;
+let precioDulceDeLeche:number;
+let precioGalletitas:number;
+
+
+precioLeche= 50;
+precioAzucar=60;
+precioYogurt=
