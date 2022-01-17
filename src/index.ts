@@ -22,7 +22,6 @@ let StockCremaDeLeche: number;
 let stockDulceDeLeche: number;
 let stockGalletitas: number;
 
-
 nombreDesupermercado = "Madariaga";
 productosDisponibles =
   "Leche,Azucar, Yogurt, manteca, queso, fideos, salsa de tomate, aceite, crema de leche, dulce de leche, galletitas";
@@ -38,31 +37,63 @@ StockCremaDeLeche = 4;
 stockDulceDeLeche = 0;
 stockGalletitas = 6;
 
-
 console.log(nombreDesupermercado);
 console.log(productosDisponibles);
-console.log(stockLeche);
-console.log(stockAzucar);
-console.log(stockManteca);
-console.log(stockQueso);
-console.log(stockFideos);
-console.log(stockSalsaDeTomate);
-console.log(StockCremaDeLeche);
-console.log(stockDulceDeLeche);
-console.log(stockGalletitas);
+console.log("Stock de leche:" + stockLeche);
+console.log("Stock de Azucar" + stockAzucar);
+console.log("Stock de Manteca" + stockManteca);
+console.log("Stock de Queso" + stockQueso);
+console.log("Stock de Fideos" + stockFideos);
+console.log("Stock de Salsa de Tomates" + stockSalsaDeTomate);
+console.log("Stock de Crema de Leche" + StockCremaDeLeche);
+console.log("Stock de Dulce de Leche" + stockDulceDeLeche);
+console.log("Stock de Galletitas" + stockGalletitas);
 
-let precioLeche:number;
-let precioAzucar:number;
-let precioYogurt:number;
-let precioManteca:number;
-let precioQueso:number;
-let precioFideos:number;
-let preciosalsaDeTomates:number;
-let precioCremaDeLeche:number;
-let precioDulceDeLeche:number;
-let precioGalletitas:number;
+let precioLeche: number;
+let precioAzucar: number;
+let precioYogurt: number;
+let precioManteca: number;
+let precioQueso: number;
+let precioFideos: number;
+let preciosalsaDeTomates: number;
+let precioCremaDeLeche: number;
+let precioDulceDeLeche: number;
+let precioGalletitas: number;
 
+precioLeche = 50;
+precioAzucar = 60;
+precioYogurt = 60;
+precioManteca = 45;
+precioQueso = 140;
+precioFideos = 70;
+preciosalsaDeTomates = 90;
+precioGalletitas = 50;
 
-precioLeche= 50;
-precioAzucar=60;
-precioYogurt=
+console.log("El precio unitario de la Leche es:" + precioLeche);
+console.log("El  precio unitario de la Azucar es:" + precioAzucar);
+console.log("El precio unitario del Yogurt es:" + precioYogurt);
+console.log("EL precio unitario de la Manteca es:" + precioManteca);
+console.log("El precio unitario del Queso  es" + precioQueso);
+console.log("El precio unitario del fideo es:" + precioFideos);
+console.log(
+  "El precio unitario de la Salsa de Tomate es:" + preciosalsaDeTomates
+);
+console.log("El precion unitario de las Galletitas es:" + precioGalletitas);
+
+const comprarleche = document.getElementById("cantidaddeleche");
+const comprarazucar = document.getElementById("cantidaddeazucar");
+const compraryogurt = document.getElementById("cantidaddeyogurt");
+const elementoboton = document.getElementById("botoncomprar");
+
+function compratotal() {
+  let cantidadcompraleche: number = Number(comprarleche.value);
+  let totalleche = cantidadcompraleche * precioLeche;
+  let cantidadcompraazucar: number = Number(comprarazucar.value);
+  let totalazucar = cantidadcompraazucar * precioAzucar;
+  let cantidadcomprayogurt: number = Number(compraryogurt.value);
+  let totalyogurt = cantidadcomprayogurt * precioYogurt;
+  let totaldetotales: number = totalleche + totalazucar + totalyogurt;
+  console.log("El total de la compra es:" + totaldetotales);
+}
+
+elementoboton?.addEventListener("click", compratotal);
